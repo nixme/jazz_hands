@@ -8,13 +8,13 @@ hard-working hands!
 
 * [**Pry**][pry] for a powerful shell alternative to IRB.
 * [**Awesome Print**][awesome_print] for stylish pretty print.
-* [**Pry Doc**] to browse Ruby source, including C, directly from the console.
+* **Pry Doc** to browse Ruby source, including C, directly from the console.
 * [**Pry Git**][pry-git] to teach the console about git. Diffs, blames, and
   commits on methods and classes, not just files.
 * [**Pry Nav**][pry-nav] to turn the console into a simple debugger.
 * [**Pry Remote**][pry-remote] to connect remotely to a Pry console.
 * [**Coolline**][coolline] and [**Coderay**][coderay] for syntax highlighting as
-  you type (_Ruby 1.9.3 only_).
+  you type. _Ruby 1.9.3 only_
 
 
 ## Usage
