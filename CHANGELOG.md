@@ -1,3 +1,7 @@
+## 0.0.4 (2011-11-30)
+
+* Add explicit requires for pry plugin gems.
+
 ## 0.0.3 (2011-11-30)
 
 * Add [pry-nav][pry-nav].

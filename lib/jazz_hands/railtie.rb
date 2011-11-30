@@ -1,7 +1,14 @@
 require 'pry'
-require 'coolline' if RUBY_VERSION >= '1.9.3'
-require 'coderay'
+require 'pry-doc'
+require 'pry-git'
+require 'pry-remote'
+require 'pry-nav'
 require 'awesome_print'
+
+if RUBY_VERSION >= '1.9.3'
+  require 'coolline'
+  require 'coderay'
+end
 
 module JazzHands
   class Railtie < Rails::Railtie
