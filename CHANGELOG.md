@@ -1,6 +1,7 @@
 ## UNRELEASED
 
 * Add [Hirb][hirb] support. Enable with `Hirb.enable` in the console.
+* Upgrade [pry-nav][pry-nav] to 0.0.3.
 
 
 ## 0.0.4 (2011-11-30)

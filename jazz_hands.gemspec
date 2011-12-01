@@ -23,7 +23,7 @@ Gem::Specification.new do |gem|
   gem.add_runtime_dependency 'pry-doc', '~> 0.3.0'
   gem.add_runtime_dependency 'pry-git', '~> 0.2.2'
   gem.add_runtime_dependency 'pry-remote', '>= 0.1.0'
-  gem.add_runtime_dependency 'pry-nav', '>= 0.0.2'
+  gem.add_runtime_dependency 'pry-nav', '>= 0.0.3'
   gem.add_runtime_dependency 'hirb', '= 0.6.0'
   gem.add_runtime_dependency 'coolline', '>= 0.1.0'
   gem.add_runtime_dependency 'coderay', '>= 0.9.8'
