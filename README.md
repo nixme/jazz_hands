@@ -8,6 +8,7 @@ hard-working hands!
 
 * [**Pry**][pry] for a powerful shell alternative to IRB.
 * [**Awesome Print**][awesome_print] for stylish pretty print.
+* [**Hirb**][hirb] for tabular collection output.
 * **Pry Doc** to browse Ruby source, including C, directly from the console.
 * [**Pry Git**][pry-git] to teach the console about git. Diffs, blames, and
   commits on methods and classes, not just files.
@@ -27,6 +28,10 @@ group :development, :test do
 end
 ```
 
+That's it. Run `rails console` as usual.
+
+[Hirb][hirb] isn't enabled by default. To use, run `Hirb.enable` in the console.
+
 
 ## Contributing
 
@@ -36,6 +41,7 @@ file an [issue][issues]. [Project changelog][changelog].
 
 [pry]:           http://pry.github.com
 [awesome_print]: https://github.com/michaeldv/awesome_print
+[hirb]:          https://github.com/cldwalker/hirb
 [pry-git]:       https://github.com/pry/pry-git
 [pry-nav]:       https://github.com/nixme/pry-nav
 [pry-remote]:    https://github.com/Mon-Ouie/pry-remote

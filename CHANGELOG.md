@@ -1,15 +1,23 @@
+## UNRELEASED
+
+* Add [Hirb][hirb] support. Enable with `Hirb.enable` in the console.
+
+
 ## 0.0.4 (2011-11-30)
 
 * Add explicit requires for pry plugin gems.
+
 
 ## 0.0.3 (2011-11-30)
 
 * Add [pry-nav][pry-nav].
 * Upgrade [awesome_print][awesome_print] to 1.0.1.
 
+
 ## 0.0.2 (2011-11-25)
 
 * Add pry-doc.
+
 
 ## 0.0.1 (2011-11-25)
 
@@ -26,3 +34,4 @@
 [pry-remote]:    https://github.com/Mon-Ouie/pry-remote
 [coolline]:      https://github.com/Mon-Ouie/coolline
 [coderay]:       https://github.com/rubychan/coderay
+[hirb]:          https://github.com/cldwalker/hirb
