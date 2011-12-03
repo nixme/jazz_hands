@@ -2,6 +2,7 @@
 
 * Add line numbers to the prompt for easy reference when using `_in_` and
   `_out`.
+* Upgrade [pry-nav][pry-nav] to 0.0.4.
 
 
 ## 0.0.5 (2011-12-01)
