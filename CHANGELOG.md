@@ -1,3 +1,9 @@
+## UNRELEASED
+
+* Add line numbers to the prompt for easy reference when using `_in_` and
+  `_out`.
+
+
 ## 0.0.5 (2011-12-01)
 
 * Add [Hirb][hirb] support. Enable with `Hirb.enable` in the console.
