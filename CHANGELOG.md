@@ -1,4 +1,4 @@
-## UNRELEASED
+## 0.0.6 (2011-12-03)
 
 * Add line numbers to the prompt for easy reference when using `_in_` and
   `_out`.
