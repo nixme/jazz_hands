@@ -4,7 +4,7 @@ Jazz Hands
 Spending hours in the rails console? Spruce it up and show off those
 hard-working hands!
 
-**jazz_hands** combines multiple console-related gems and a bit of glue:
+**jazz_hands** is an opinionated set of console-related gems and a bit of glue:
 
 * [**Pry**][pry] for a powerful shell alternative to IRB.
 * [**Awesome Print**][awesome_print] for stylish pretty print.
@@ -20,7 +20,7 @@ hard-working hands!
 
 ## Usage
 
-Rails 3 and above only. Add to your project Gemfile:
+Ruby 1.9.2+, Rails 3+ only. Add to your project Gemfile:
 
 ```ruby
 group :development, :test do
