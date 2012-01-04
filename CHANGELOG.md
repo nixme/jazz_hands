@@ -1,3 +1,9 @@
+## 0.1.0 (2012-01-04)
+
+* For performance, enable [pry-nav][pry-nav] only on MRI 1.9.3 by default. To
+  use on MRI 1.9.2, add `JazzHands.enable_pry_nav` to a Rails initializer.
+* Fix [Hirb][hirb] support.
+
 ## 0.0.6 (2011-12-03)
 
 * Add line numbers to the prompt for easy reference when using `_in_` and
