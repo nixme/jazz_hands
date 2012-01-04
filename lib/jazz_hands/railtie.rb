@@ -3,7 +3,6 @@ require 'pry-doc'
 require 'pry-git'
 require 'pry-remote'
 require 'awesome_print'
-require 'jazz_hands/hirb_ext'
 
 if RUBY_VERSION >= '1.9.3'
   require 'pry-nav'   # Enabled by default on MRI 1.9.3 only
@@ -64,6 +63,8 @@ module JazzHands
             "#{spaces} #{raquo}  "
           end
         ]
+
+        require 'jazz_hands/hirb_ext'
       end
     end
   end
