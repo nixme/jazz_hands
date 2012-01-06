@@ -2,6 +2,7 @@ require 'jazz_hands/version'
 require 'jazz_hands/railtie' if defined?(Rails)
 
 module JazzHands
+  extend self
 
   # Enable pry-nav.
   #
@@ -10,7 +11,7 @@ module JazzHands
   #
   #   JazzHands.enable_pry_nav
   #
-  def self.enable_pry_nav
+  def enable_pry_nav
     require 'pry-nav'
   end
 
@@ -22,7 +23,7 @@ module JazzHands
   #
   #   JazzHands.enable_syntax_highlighting_as_you_type
   #
-  def self.enable_syntax_highlighting_as_you_type
+  def enable_syntax_highlighting_as_you_type
     raise 'Syntax highlighting only supported on 1.9.3+' unless RUBY_VERSION >= '1.9.3'
 
     # Use coolline with CodeRay for syntax highlighting as you type.
@@ -42,4 +43,9 @@ module JazzHands
       end
     end
   end
+
+
+  ### Internal methods ###
+
+  attr_accessor :hirb_output
 end

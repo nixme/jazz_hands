@@ -28,4 +28,5 @@ Gem::Specification.new do |gem|
   gem.add_runtime_dependency 'coolline', '>= 0.1.0'
   gem.add_runtime_dependency 'coderay', '>= 0.9.8'
   gem.add_runtime_dependency 'awesome_print', '~> 1.0.1'
+  gem.add_runtime_dependency 'railties', '~> 3.0'
 end
