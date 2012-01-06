@@ -15,6 +15,11 @@ module JazzHands
       silence_warnings do
         ::IRB = Pry    # Replace IRB with Pry completely
 
+        # We're managing the loading of plugins, especially pry-nav which
+        # shouldn't be loaded on 1.9.2. So don't let pry autoload them.
+        Pry.config.should_load_plugins = false
+        Pry.config.plugins.enabled = false
+
         # Use awesome_print for output, but keep pry's pager. If Hirb is
         # enabled, try printing with it first.
         Pry.config.print = ->(output, value) do
