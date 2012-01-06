@@ -2,6 +2,10 @@
 
 * For performance, enable [pry-nav][pry-nav] only on MRI 1.9.3 by default. To
   use on MRI 1.9.2, add `JazzHands.enable_pry_nav` to a Rails initializer.
+* Due to buggy behavior, syntax highlighting as you type via
+  [Coolline][coolline] and [Coderay][coderay] is disabled by default. Enable
+  with `JazzHands.enable_syntax_highlighting_as_you_type` in a Rails
+  initializer. MRI 1.9.3 only.
 * Fix [Hirb][hirb] support.
 
 ## 0.0.6 (2011-12-03)

@@ -16,7 +16,7 @@ hard-working hands!
 * [**Pry Nav**][pry-nav] to turn the console into a simple debugger. _Ruby 1.9.3
   recommended_
 * [**Coolline**][coolline] and [**Coderay**][coderay] for syntax highlighting as
-  you type. _Ruby 1.9.3 only_
+  you type. _Optional. Ruby 1.9.3 only_
 
 
 ## Usage
@@ -35,6 +35,11 @@ That's it. Run `rails console` as usual.
 
 For performance, [pry-nav][pry-nav] is only enabled on 1.9.3 by default. To
 manually enable for 1.9.2, add `JazzHands.enable_pry_nav` to an initializer.
+
+Syntax highlighting as you type via [Coolline][coolline] and [Coderay][coderay]
+is disabled by default due to slightly buggy behavior. To enable, add
+`JazzHands.enable_syntax_highlighting_as_you_type` to an initializer. Only works
+with 1.9.3.
 
 
 ## Contributing
