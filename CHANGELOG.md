@@ -7,6 +7,7 @@
   with `JazzHands.enable_syntax_highlighting_as_you_type` in a Rails
   initializer. MRI 1.9.3 only.
 * Fix [Hirb][hirb] support.
+* Upgrade [awesome_print][awesome_print] to 1.0.2.
 
 ## 0.0.6 (2011-12-03)
 
