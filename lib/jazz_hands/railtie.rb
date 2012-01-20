@@ -13,7 +13,8 @@ module JazzHands
   class Railtie < Rails::Railtie
     initializer 'jazz_hands.initialize' do |app|
       silence_warnings do
-        ::IRB = Pry    # Replace IRB with Pry completely
+        ::IRB = Pry                      # Replace IRB with Pry completely
+        IRB::ExtendCommandBundle = Pry   # Rails 3.2 injects commands in there
 
         # We're managing the loading of plugins, especially pry-nav which
         # shouldn't be loaded on 1.9.2. So don't let pry autoload them.

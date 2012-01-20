@@ -1,3 +1,7 @@
+## 0.1.1 (2012-01-20)
+
+* Rails 3.2 compatibility
+
 ## 0.1.0 (2012-01-04)
 
 * For performance, enable [pry-nav][pry-nav] only on MRI 1.9.3 by default. To
