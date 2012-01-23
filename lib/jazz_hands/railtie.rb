@@ -63,12 +63,11 @@ module JazzHands
     end
 
     console do
-      # Mimic IRB's ExtendCommandBundle API now that Rails 3.2 uses it to inject
-      # commands.
-      if defined? IRB::ExtendCommandBundle
-        # We inject to the TOPLEVEL_BINDING's self so only the repl's Object
+      # Mimic the IRB's ExtendCommandBundle injection used in Rails 3.2
+      if defined? Rails::ConsoleMethods
+        # We inject into the TOPLEVEL_BINDING's self so only the repl's Object
         # instance is affected, not all objects.
-        TOPLEVEL_BINDING.eval('self').extend IRB::ExtendCommandBundle
+        TOPLEVEL_BINDING.eval('self').extend Rails::ConsoleMethods
       end
     end
   end
