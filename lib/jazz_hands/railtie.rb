@@ -63,17 +63,12 @@ module JazzHands
     end
 
     console do
-      # Add Rails 3.2 console commands as Pry commands
-      if defined? Rails::ConsoleMethods
-        class Pry::RailsCommands
-          extend Rails::ConsoleMethods
-        end
-
-        Rails::ConsoleMethods.instance_methods.each do |name|
-          Pry::Commands.command(name.to_s) do
-            Pry::RailsCommands.send(name)
-          end
-        end
+      # Mimic IRB's ExtendCommandBundle API now that Rails 3.2 uses it to inject
+      # commands.
+      if defined? IRB::ExtendCommandBundle
+        # We inject to the TOPLEVEL_BINDING's self so only the repl's Object
+        # instance is affected, not all objects.
+        TOPLEVEL_BINDING.eval('self').extend IRB::ExtendCommandBundle
       end
     end
   end
