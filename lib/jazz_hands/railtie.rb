@@ -21,19 +21,6 @@ module JazzHands
           module IRB::ExtendCommandBundle; end
         end
 
-        # Add Rails 3.2 console commands as Pry commands
-        if defined? Rails::ConsoleMethods
-          class Pry::RailsCommands
-            extend Rails::ConsoleMethods
-          end
-
-          Rails::ConsoleMethods.instance_methods.each do |name|
-            Pry::Commands.command(name.to_s) do
-              Pry::RailsCommands.send(name)
-            end
-          end
-        end
-
         # We're managing the loading of plugins, especially pry-nav which
         # shouldn't be loaded on 1.9.2. So don't let pry autoload them.
         Pry.config.should_load_plugins = false
@@ -72,6 +59,21 @@ module JazzHands
             "#{spaces} #{raquo}  "
           end
         ]
+      end
+    end
+
+    console do
+      # Add Rails 3.2 console commands as Pry commands
+      if defined? Rails::ConsoleMethods
+        class Pry::RailsCommands
+          extend Rails::ConsoleMethods
+        end
+
+        Rails::ConsoleMethods.instance_methods.each do |name|
+          Pry::Commands.command(name.to_s) do
+            Pry::RailsCommands.send(name)
+          end
+        end
       end
     end
   end
