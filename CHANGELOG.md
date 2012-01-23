@@ -1,3 +1,8 @@
+## 0.1.2 (2012-01-23)
+
+* Improved Rails 3.2 compatibility. Console methods like `app`, `new_session`,
+  `reload!`, `helper`, and `controller` work as expected.
+
 ## 0.1.1 (2012-01-20)
 
 * Rails 3.2 compatibility
