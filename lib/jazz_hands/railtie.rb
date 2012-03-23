@@ -2,6 +2,7 @@ require 'pry'
 require 'pry-doc'
 require 'pry-git'
 require 'pry-remote'
+require 'pry-stack_explorer'
 require 'awesome_print'
 require 'jazz_hands/hirb_ext'
 
@@ -24,7 +25,6 @@ module JazzHands
         # We're managing the loading of plugins, especially pry-nav which
         # shouldn't be loaded on 1.9.2. So don't let pry autoload them.
         Pry.config.should_load_plugins = false
-        Pry.config.plugins.enabled = false
 
         # Use awesome_print for output, but keep pry's pager. If Hirb is
         # enabled, try printing with it first.
@@ -40,6 +40,7 @@ module JazzHands
         raquo = Pry::Helpers::Text.red("\u00BB")
         line = ->(pry) { "[#{Pry::Helpers::Text.bold(pry.input_array.size)}] " }
         target_string = ->(object, level) do
+          level = 0 if level < 0
           unless (string = Pry.view_clip(object)) == 'main'
             "(#{'../' * level}#{string})"
           else

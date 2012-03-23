@@ -1,3 +1,10 @@
+## 0.2.0 (2012-03-19)
+
+* Add [pry-stack_explorer][pry-stack_explorer] 0.4.1.
+* Upgrade [pry-remote][pry-remote] to 0.1.1 and [pry-nav][pry-nav] to 0.2.0.
+* Upgrade recommended gem minor versions: [pry][pry] 0.9.8.4, [pry-doc][pry-doc]
+  0.4.1, [hirb][hirb] 0.6.2, and [coderay][coderay] 1.0.5.
+
 ## 0.1.2 (2012-01-23)
 
 * Improved Rails 3.2 compatibility. Console methods like `app`, `new_session`,
@@ -44,7 +51,7 @@
 
 ## 0.0.2 (2011-11-25)
 
-* Add pry-doc.
+* Add [pry-doc][pry-doc].
 
 
 ## 0.0.1 (2011-11-25)
@@ -55,11 +62,13 @@
   pretty colors.
 
 
-[pry]:           http://pry.github.com
-[awesome_print]: https://github.com/michaeldv/awesome_print
-[pry-git]:       https://github.com/pry/pry-git
-[pry-nav]:       https://github.com/nixme/pry-nav
-[pry-remote]:    https://github.com/Mon-Ouie/pry-remote
-[coolline]:      https://github.com/Mon-Ouie/coolline
-[coderay]:       https://github.com/rubychan/coderay
-[hirb]:          https://github.com/cldwalker/hirb
+[pry]:                http://pry.github.com
+[awesome_print]:      https://github.com/michaeldv/awesome_print
+[pry-doc]:            https://github.com/pry/pry-doc
+[pry-git]:            https://github.com/pry/pry-git
+[pry-nav]:            https://github.com/nixme/pry-nav
+[pry-remote]:         https://github.com/Mon-Ouie/pry-remote
+[coolline]:           https://github.com/Mon-Ouie/coolline
+[coderay]:            https://github.com/rubychan/coderay
+[hirb]:               https://github.com/cldwalker/hirb
+[pry-stack_explorer]: https://github.com/pry/pry-stack_explorer
