@@ -4,18 +4,6 @@ require 'jazz_hands/railtie' if defined?(Rails)
 module JazzHands
   extend self
 
-  # Enable pry-nav.
-  #
-  # For performance reasons, pry-nav is enabled by default for only MRI 1.9.3+.
-  # To use with MRI 1.9.2, call this method from a Rails initializer:
-  #
-  #   JazzHands.enable_pry_nav
-  #
-  def enable_pry_nav
-    require 'pry-nav'
-  end
-
-
   # Enable syntax highlighting as you type in the Rails console via coolline and
   # coderay (MRI 1.9.3+ only). Disabled by default as it's a bit buggy.
   #

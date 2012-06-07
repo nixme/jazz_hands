@@ -5,9 +5,7 @@ require 'pry-remote'
 require 'pry-stack_explorer'
 require 'awesome_print'
 require 'jazz_hands/hirb_ext'
-
-# Enable pry-nav by default on MRI 1.9.3 only
-require 'pry-nav' if RUBY_VERSION >= '1.9.3'
+require 'pry-debugger'
 
 
 module JazzHands
@@ -22,8 +20,7 @@ module JazzHands
           module IRB::ExtendCommandBundle; end
         end
 
-        # We're managing the loading of plugins, especially pry-nav which
-        # shouldn't be loaded on 1.9.2. So don't let pry autoload them.
+        # We're managing the loading of plugins. So don't let pry autoload them.
         Pry.config.should_load_plugins = false
 
         # Use awesome_print for output, but keep pry's pager. If Hirb is

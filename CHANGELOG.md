@@ -1,3 +1,11 @@
+## 0.3.0 (2012-06-07)
+
+* Replace [pry-nav][pry-nav] with [pry-debugger][pry-debugger] for improved
+  performance and no segfaults. `JazzHands.enable_pry_nav` removed.
+* Upgrade [pry][pry] to the latest 0.9.9, [pry-doc][pry-doc] 0.4.2,
+  [pry-git][pry-git] 0.2.3, [pry-stack_explorer][pry-stack_explorer] 0.4.2,
+  [pry-remote][pry-remote] 0.1.4, [coderay][coderay] 1.0.6.
+
 ## 0.2.0 (2012-03-19)
 
 * Add [pry-stack_explorer][pry-stack_explorer] 0.4.1.

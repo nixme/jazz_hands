@@ -14,8 +14,7 @@ hard-working hands!
 * [**Pry Git**][pry-git] to teach the console about git. Diffs, blames, and
   commits on methods and classes, not just files.
 * [**Pry Remote**][pry-remote] to connect remotely to a Pry console.
-* [**Pry Nav**][pry-nav] to turn the console into a simple debugger. _Ruby 1.9.3
-  recommended_
+* [**Pry Debugger**][pry-debugger] to turn the console into a simple debugger.
 * [**Pry Stack Explorer**][pry-stack_explorer] to navigate the call stack and
   frames.
 * [**Coolline**][coolline] and [**Coderay**][coderay] for syntax highlighting as
@@ -36,9 +35,6 @@ That's it. Run `rails console` as usual.
 
 [Hirb][hirb] isn't enabled by default. To use, run `Hirb.enable` in the console.
 
-For performance, [pry-nav][pry-nav] is only enabled on 1.9.3 by default. To
-manually enable for 1.9.2, add `JazzHands.enable_pry_nav` to an initializer.
-
 Syntax highlighting as you type via [Coolline][coolline] and [Coderay][coderay]
 is disabled by default due to slightly buggy behavior. To enable, add
 `JazzHands.enable_syntax_highlighting_as_you_type` to an initializer. Only works
@@ -56,7 +52,7 @@ file an [issue][issues]. [Project changelog][changelog].
 [hirb]:               https://github.com/cldwalker/hirb
 [pry-doc]:            https://github.com/pry/pry-doc
 [pry-git]:            https://github.com/pry/pry-git
-[pry-nav]:            https://github.com/nixme/pry-nav
+[pry-debugger]:       https://github.com/nixme/pry-debugger
 [pry-remote]:         https://github.com/Mon-Ouie/pry-remote
 [pry-stack_explorer]: https://github.com/pry/pry-stack_explorer
 [coolline]:           https://github.com/Mon-Ouie/coolline
