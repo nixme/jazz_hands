@@ -18,7 +18,7 @@ hard-working hands!
 * [**Pry Stack Explorer**][pry-stack_explorer] to navigate the call stack and
   frames.
 * [**Coolline**][coolline] and [**Coderay**][coderay] for syntax highlighting as
-  you type. _Optional. Ruby 1.9.3 only_
+  you type. _Optional. MRI 1.9.3 only_
 
 
 ## Usage
@@ -38,7 +38,7 @@ That's it. Run `rails console` as usual.
 Syntax highlighting as you type via [Coolline][coolline] and [Coderay][coderay]
 is disabled by default due to slightly buggy behavior. To enable, add
 `JazzHands.enable_syntax_highlighting_as_you_type` to an initializer. Only works
-with 1.9.3.
+with MRI 1.9.3.
 
 
 ## Contributing

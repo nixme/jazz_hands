@@ -1,3 +1,7 @@
+## 0.3.1 (2012-06-11)
+
+* Upgrade [pry-debugger][pry-debugger] to 0.2.0.
+
 ## 0.3.0 (2012-06-07)
 
 * Replace [pry-nav][pry-nav] with [pry-debugger][pry-debugger] for improved
