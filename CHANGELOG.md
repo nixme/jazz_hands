@@ -84,3 +84,4 @@
 [coderay]:            https://github.com/rubychan/coderay
 [hirb]:               https://github.com/cldwalker/hirb
 [pry-stack_explorer]: https://github.com/pry/pry-stack_explorer
+[pry-debugger]:       https://github.com/nixme/pry-debugger
