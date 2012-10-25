@@ -34,7 +34,7 @@ module JazzHands
         # Friendlier prompt - nesting levels look like directory paths
         name = app.class.parent_name.underscore
         colored_name = Pry::Helpers::Text.blue(name)
-        raquo = Pry::Helpers::Text.red("\u00BB")
+        raquo = Pry::Helpers::Text.red(">>")
         line = ->(pry) { "[#{Pry::Helpers::Text.bold(pry.input_array.size)}] " }
         target_string = ->(object, level) do
           level = 0 if level < 0
