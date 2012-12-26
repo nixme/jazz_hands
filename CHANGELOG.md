@@ -2,7 +2,11 @@
 
 * Add [pry-rails][pry-rails] 0.2.2 for maintained console hooks and new
   `show-routes`, `show-models`, and `show-middleware` commands.
-
+* Upgrade [pry][pry] to the latest 0.9.10, [pry-doc][pry-doc] 0.4.4,
+  [pry-stack_explorer][pry-stack_explorer] 0.4.7, [pry-remote][pry-remote]
+  0.1.6, [pry-debugger][pry-debugger] 0.2.1, [hirb][hirb] 0.7.0,
+  [Coolline][coolline] 0.4.0, [coderay][coderay] 1.0.8,
+  [awesome_print][awesome_print] 1.1.0.
 
 ## 0.3.1 (2012-06-11)
 
