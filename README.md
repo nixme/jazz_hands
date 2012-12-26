@@ -37,10 +37,43 @@ That's it. Run `rails console` as usual.
 
 [Hirb][hirb] isn't enabled by default. To use, run `Hirb.enable` in the console.
 
+Ruby compiled against a proper readline library, ideally GNU readline, is
+recommended. Alternatively, [`gem install rb-readline`][rb-readline] for an
+acceptible backup. Using ruby compiled against a `libedit` wrapper (primarily OS
+X) will work but is not recommended.
+
+
+## Options
+
+Change the following options by creating an initializer in your Rails project
+Example `config/initializers/jazz_hands.rb`:
+
+```ruby
+JazzHands.colored_prompt = false
+JazzHands.enable_syntax_highlighting_as_you_type!
+```
+
+### `colored_prompt`
+
+Color the console prompt? Defaults to `true` for GNU readline or `rb-readline`
+which don't exhibit character counting issues with colored prompts. `false` for
+libedit.
+
+Note: `Pry.color = false` trumps this setting and disables all coloring in the
+console.
+
+### `prompt_separator`
+
+Separator string between the application name and the line input. Defaults to
+`»` for GNU readline or libedit. Defaults to `>` for `rb-readline` which doesn't
+handled mixed encodings well.
+
+### Syntax highlighting
+
 Syntax highlighting as you type via [Coolline][coolline] and [Coderay][coderay]
 is disabled by default due to slightly buggy behavior. To enable, add
-`JazzHands.enable_syntax_highlighting_as_you_type` to an initializer. Only works
-with MRI 1.9.3.
+`JazzHands.enable_syntax_highlighting_as_you_type!` to an initializer. Only
+works with MRI 1.9.3.
 
 
 ## Contributing
@@ -60,6 +93,7 @@ file an [issue][issues]. [Project changelog][changelog].
 [pry-stack_explorer]: https://github.com/pry/pry-stack_explorer
 [coolline]:           https://github.com/Mon-Ouie/coolline
 [coderay]:            https://github.com/rubychan/coderay
+[rb-readline]:        https://github.com/luislavena/rb-readline
 [pullrequests]:       https://github.com/nixme/jazz_hands/pulls
 [issues]:             https://github.com/nixme/jazz_hands/issues
 [changelog]:          https://github.com/nixme/jazz_hands/blob/master/CHANGELOG.md
