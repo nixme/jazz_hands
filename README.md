@@ -9,6 +9,8 @@ hard-working hands!
 * [**Pry**][pry] for a powerful shell alternative to IRB.
 * [**Awesome Print**][awesome_print] for stylish pretty print.
 * [**Hirb**][hirb] for tabular collection output.
+* [**Pry Rails**][pry-rails] for additional commands (`show-routes`,
+  `show-models`, `show-middleware`) in the Rails console.
 * [**Pry Doc**][pry-doc] to browse Ruby source, including C, directly from the
   console.
 * [**Pry Git**][pry-git] to teach the console about git. Diffs, blames, and
@@ -50,6 +52,7 @@ file an [issue][issues]. [Project changelog][changelog].
 [pry]:                http://pry.github.com
 [awesome_print]:      https://github.com/michaeldv/awesome_print
 [hirb]:               https://github.com/cldwalker/hirb
+[pry-rails]:          https://github.com/rweng/pry-rails
 [pry-doc]:            https://github.com/pry/pry-doc
 [pry-git]:            https://github.com/pry/pry-git
 [pry-debugger]:       https://github.com/nixme/pry-debugger

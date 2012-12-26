@@ -1,3 +1,9 @@
+## UNRELEASED
+
+* Add [pry-rails][pry-rails] 0.2.2 for maintained console hooks and new
+  `show-routes`, `show-models`, and `show-middleware` commands.
+
+
 ## 0.3.1 (2012-06-11)
 
 * Upgrade [pry-debugger][pry-debugger] to 0.2.0.
@@ -85,3 +91,4 @@
 [hirb]:               https://github.com/cldwalker/hirb
 [pry-stack_explorer]: https://github.com/pry/pry-stack_explorer
 [pry-debugger]:       https://github.com/nixme/pry-debugger
+[pry-rails]:          https://github.com/rweng/pry-rails

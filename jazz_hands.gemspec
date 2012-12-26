@@ -21,6 +21,7 @@ Gem::Specification.new do |gem|
   gem.required_ruby_version = '>= 1.9.2'
   gem.add_runtime_dependency 'pry', '~> 0.9.9'
   gem.add_runtime_dependency 'pry-doc', '~> 0.4.2'
+  gem.add_runtime_dependency 'pry-rails', '~> 0.2.2'
   gem.add_runtime_dependency 'pry-git', '~> 0.2.3'
   gem.add_runtime_dependency 'pry-stack_explorer', '~> 0.4.2'
   gem.add_runtime_dependency 'pry-remote', '>= 0.1.4'

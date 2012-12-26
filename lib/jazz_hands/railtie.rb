@@ -1,4 +1,5 @@
 require 'pry'
+require 'pry-rails'
 require 'pry-doc'
 require 'pry-git'
 require 'pry-remote'
@@ -12,14 +13,6 @@ module JazzHands
   class Railtie < Rails::Railtie
     initializer 'jazz_hands.initialize' do |app|
       silence_warnings do
-        ::IRB = Pry                      # Replace IRB with Pry completely
-
-        # Rails 3.2 injects commands into IRB::ExtendCommandBundle. Make sure
-        # Pry is compatible enough so Rails boot works.
-        unless defined? IRB::ExtendCommandBundle   # Latest Pry defines it
-          module IRB::ExtendCommandBundle; end
-        end
-
         # We're managing the loading of plugins. So don't let pry autoload them.
         Pry.config.should_load_plugins = false
 
@@ -57,15 +50,6 @@ module JazzHands
             "#{spaces} #{raquo}  "
           end
         ]
-      end
-    end
-
-    console do
-      # Mimic the IRB's ExtendCommandBundle injection used in Rails 3.2
-      if defined? Rails::ConsoleMethods
-        # We inject into the TOPLEVEL_BINDING's self so only the repl's Object
-        # instance is affected, not all objects.
-        TOPLEVEL_BINDING.eval('self').extend Rails::ConsoleMethods
       end
     end
   end
