@@ -55,24 +55,23 @@ JazzHands.enable_syntax_highlighting_as_you_type!
 
 ### `colored_prompt`
 
-Color the console prompt? Defaults to `true` for GNU readline or `rb-readline`
-which don't exhibit character counting issues with colored prompts. `false` for
-libedit.
+Color the console prompt? Defaults to `true` when the current ruby is compiled
+against GNU readline or `rb-readline`, which don't have issues counting
+characters in colored prompts. `false` for libedit.
 
-Note: `Pry.color = false` trumps this setting and disables all coloring in the
-console.
+Note: `Pry.color = false` trumps this setting and disables all console coloring.
 
 ### `prompt_separator`
 
-Separator string between the application name and the line input. Defaults to
-`»` for GNU readline or libedit. Defaults to `>` for `rb-readline` which doesn't
-handled mixed encodings well.
+Separator string between the application name and line input. Defaults to `»`
+for GNU readline or libedit. Defaults to `>` for `rb-readline` which fails on
+mixed encodings.
 
 ### Syntax highlighting
 
 Syntax highlighting as you type via [Coolline][coolline] and [Coderay][coderay]
 is disabled by default due to slightly buggy behavior. To enable, add
-`JazzHands.enable_syntax_highlighting_as_you_type!` to an initializer. Only
+`JazzHands.enable_syntax_highlighting_as_you_type!` to the initializer. Only
 works with MRI 1.9.3.
 
 
