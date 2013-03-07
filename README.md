@@ -20,12 +20,12 @@ hard-working hands!
 * [**Pry Stack Explorer**][pry-stack_explorer] to navigate the call stack and
   frames.
 * [**Coolline**][coolline] and [**Coderay**][coderay] for syntax highlighting as
-  you type. _Optional. MRI 1.9.3 only_
+  you type. _Optional. MRI 1.9.3/2.0.0 only_
 
 
 ## Usage
 
-Ruby 1.9.2+, Rails 3+ only. Add to your project Gemfile:
+Ruby 1.9.2+, Rails 3 or 4 only. Add to your project Gemfile:
 
 ```ruby
 group :development, :test do
@@ -72,7 +72,7 @@ mixed encodings.
 Syntax highlighting as you type via [Coolline][coolline] and [Coderay][coderay]
 is disabled by default due to slightly buggy behavior. To enable, add
 `JazzHands.enable_syntax_highlighting_as_you_type!` to the initializer. Only
-works with MRI 1.9.3.
+works with MRI 1.9.3 or 2.0.0.
 
 
 ## Contributing

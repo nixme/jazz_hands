@@ -1,3 +1,12 @@
+## 0.5.0 (2013-03-13)
+
+* Rails 4, Ruby 2.0.0 compatibility.
+* Upgrade [pry][pry] to the latest 0.9.12,
+  [pry-stack_explorer][pry-stack_explorer] 0.4.9, [pry-remote][pry-remote]
+  0.1.7, [pry-debugger][pry-debugger] 0.2.2, [hirb][hirb] 0.7.1,
+  [coderay][coderay] 1.0.9.
+
+
 ## 0.4.0 (2012-12-27)
 
 * Add [pry-rails][pry-rails] 0.2.2 for maintained console hooks and new
