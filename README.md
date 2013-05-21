@@ -49,8 +49,10 @@ Change the following options by creating an initializer in your Rails project
 Example `config/initializers/jazz_hands.rb`:
 
 ```ruby
-JazzHands.colored_prompt = false
-JazzHands.enable_syntax_highlighting_as_you_type!
+if defined?(JazzHands)
+  JazzHands.colored_prompt = false
+  JazzHands.enable_syntax_highlighting_as_you_type!
+end
 ```
 
 ### `colored_prompt`
