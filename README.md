@@ -24,6 +24,7 @@ hard-working hands!
 
 ## Usage
 
+### Rails Projects
 Ruby 1.9.2+, Rails 3 or 4 only. Add to your project Gemfile:
 
 ```ruby
@@ -33,6 +34,29 @@ end
 ```
 
 That's it. Run `rails console` as usual.
+
+### Non-Rails Projects
+With bundler, add to your Gemfile:
+```ruby
+gem 'jazz_hands'
+```
+
+Then require the gem
+```ruby
+require 'jazz_hands' #(or use Bundler.require)
+```
+
+In code:
+```ruby
+foo_method(1,2)
+binding.pry
+bar_method(3,4)
+```
+
+Or a console, with `bundle console` and the following hack:
+```ruby
+echo "Pry.start || exit rescue LoadError" > ~/.irbrc
+```
 
 [Hirb][hirb] isn't enabled by default. To use, run `Hirb.enable` in the console.
 
