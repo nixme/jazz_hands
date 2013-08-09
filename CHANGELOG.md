@@ -1,3 +1,6 @@
+## 0.6.0 (2013-08-09)
+* Non-rails project compatability
+
 ## 0.5.0 (2013-03-13)
 
 * Rails 4, Ruby 2.0.0 compatibility.
