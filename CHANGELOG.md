@@ -1,5 +1,5 @@
-## UNRELEASED
-
+## 0.6.0 (2013-08-09)
+* Non-rails project compatability
 * Remove [pry-debugger][pry-debugger] to let people explicitly pick their
   debugging tool of choice.
 
@@ -14,7 +14,6 @@
 
 * Upgrade [pry-rails][pry-rails] to the latest 0.3.1, [pry-doc][pry-doc] 0.4.6,
   [coolline][coolline] 0.4.2.
-
 
 ## 0.5.0 (2013-03-13)
 
