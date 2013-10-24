@@ -1,3 +1,10 @@
+## 0.5.2 (2013-10-24)
+
+* Upgrade [pry-rails][pry-rails] to the latest 0.3.2,
+  [awesome_print][awesome_print] to 1.2 and loosen it's dependency, and removed
+  [coderay][coderay] as an explicit dependency since [pry][pry] already includes
+  it.
+
 ## 0.5.1 (2013-06-28)
 
 * Upgrade [pry-rails][pry-rails] to the latest 0.3.1, [pry-doc][pry-doc] 0.4.6,

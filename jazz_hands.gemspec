@@ -20,7 +20,7 @@ Gem::Specification.new do |gem|
   # Dependencies
   gem.required_ruby_version = '>= 1.9.2'
   gem.add_runtime_dependency 'pry', '~> 0.9.12'
-  gem.add_runtime_dependency 'pry-rails', '~> 0.3.1'
+  gem.add_runtime_dependency 'pry-rails', '~> 0.3.2'
   gem.add_runtime_dependency 'pry-doc', '~> 0.4.6'
   gem.add_runtime_dependency 'pry-git', '~> 0.2.3'
   gem.add_runtime_dependency 'pry-stack_explorer', '~> 0.4.9'
@@ -28,7 +28,6 @@ Gem::Specification.new do |gem|
   gem.add_runtime_dependency 'pry-debugger', '~> 0.2.2'
   gem.add_runtime_dependency 'hirb', '~> 0.7.1'
   gem.add_runtime_dependency 'coolline', '>= 0.4.2'
-  gem.add_runtime_dependency 'coderay', '~> 1.0.9'
-  gem.add_runtime_dependency 'awesome_print', '~> 1.1.0'
+  gem.add_runtime_dependency 'awesome_print', '~> 1.2'
   gem.add_runtime_dependency 'railties', '>= 3.0', '< 5.0'
 end
