@@ -1,3 +1,8 @@
+## UNRELEASED
+
+* Remove [pry-debugger][pry-debugger] to let people explicitly pick their
+  debugging tool of choice.
+
 ## 0.5.2 (2013-10-24)
 
 * Upgrade [pry-rails][pry-rails] to the latest 0.3.2,
