@@ -1,4 +1,4 @@
-Jazz Hands
+Jazz Hands [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/nixme/jazz_hands/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 ==========
 
 Spending hours in the rails console? Spruce it up and show off those
