@@ -52,6 +52,7 @@ Example `config/initializers/jazz_hands.rb`:
 if defined?(JazzHands)
   JazzHands.colored_prompt = false
   JazzHands.enable_syntax_highlighting_as_you_type!
+  JazzHands.rails_env_in_prompt = true
 end
 ```
 
@@ -68,6 +69,10 @@ Note: `Pry.color = false` trumps this setting and disables all console coloring.
 Separator string between the application name and line input. Defaults to `»`
 for GNU readline or libedit. Defaults to `>` for `rb-readline` which fails on
 mixed encodings.
+
+### `rails_env_in_prompt`
+
+Set to `true` to show the Rails environment in the prompt. Default: `false`.
 
 ### Syntax highlighting
 

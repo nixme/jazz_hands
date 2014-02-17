@@ -40,6 +40,7 @@ module JazzHands
         bold = ->(text) { color[] ? "\001\e[1m\002#{text}\001\e[0m\002"    : text.to_s }
 
         separator = -> { red.(JazzHands.prompt_separator) }
+        rails_env = -> { JazzHands.rails_env_in_prompt ? "(#{Rails.env})" : nil }
         name = app.class.parent_name.underscore
         colored_name = -> { blue.(name) }
 
@@ -55,7 +56,7 @@ module JazzHands
 
         Pry.config.prompt = [
           ->(object, level, pry) do      # Main prompt
-            "#{line.(pry)}#{colored_name.()}#{target_string.(object, level)} #{separator.()}  "
+            "#{line.(pry)}#{colored_name.()}#{rails_env.()}#{target_string.(object, level)} #{separator.()}  "
           end,
           ->(object, level, pry) do      # Wait prompt in multiline input
             spaces = ' ' * (
