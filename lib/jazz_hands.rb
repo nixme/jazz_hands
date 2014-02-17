@@ -28,6 +28,13 @@ module JazzHands
   mattr_accessor :prompt_separator
   self.prompt_separator = defined?(RbReadline) ? '>' : "\u00BB"
 
+  # Include the Rails.env in the prompt?
+  #
+  # Default: false
+  #
+  mattr_accessor :rails_env_in_prompt
+  self.rails_env_in_prompt = false
+
 
   class << self
     # Enable syntax highlighting as you type in the Rails console via coolline and
