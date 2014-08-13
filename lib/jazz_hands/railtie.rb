@@ -6,8 +6,11 @@ require 'pry-remote'
 require 'pry-stack_explorer'
 require 'awesome_print'
 require 'jazz_hands/hirb_ext'
-require 'pry-debugger'
-
+if RUBY_VERSION > '2'
+  require 'pry-byebug'
+else
+  require 'pry-debugger'
+end
 
 module JazzHands
   class Railtie < Rails::Railtie
