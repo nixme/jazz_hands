@@ -19,7 +19,7 @@ Gem::Specification.new do |gem|
 
   # Dependencies
   gem.required_ruby_version = '>= 1.9.2'
-  gem.add_runtime_dependency 'pry', '~> 0.9.12'
+  gem.add_runtime_dependency 'pry', '~> 0.10.0'
   gem.add_runtime_dependency 'pry-rails', '~> 0.3.2'
   gem.add_runtime_dependency 'pry-doc', '~> 0.4.6'
   gem.add_runtime_dependency 'pry-git', '~> 0.2.3'
