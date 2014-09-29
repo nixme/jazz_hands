@@ -18,15 +18,16 @@ Gem::Specification.new do |gem|
   gem.require_paths = ['lib']
 
   # Dependencies
-  gem.required_ruby_version = '>= 1.9.2'
-  gem.add_runtime_dependency 'pry', '~> 0.9.12'
+  gem.required_ruby_version = '>= 2.0.0'
+  gem.add_runtime_dependency 'pry', '~> 0.10.1'
   gem.add_runtime_dependency 'pry-rails', '~> 0.3.2'
   gem.add_runtime_dependency 'pry-doc', '~> 0.4.6'
   gem.add_runtime_dependency 'pry-git', '~> 0.2.3'
   gem.add_runtime_dependency 'pry-stack_explorer', '~> 0.4.9'
   gem.add_runtime_dependency 'pry-remote', '>= 0.1.7'
+  gem.add_runtime_dependency 'pry-byebug', '>= 2.0.0'
   gem.add_runtime_dependency 'hirb', '~> 0.7.1'
-  gem.add_runtime_dependency 'coolline', '>= 0.4.2'
+  gem.add_runtime_dependency 'pry-coolline', '>= 0.2.4'
   gem.add_runtime_dependency 'awesome_print', '~> 1.2'
   gem.add_runtime_dependency 'railties', '>= 3.0', '< 5.0'
 end
