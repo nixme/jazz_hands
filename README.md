@@ -34,11 +34,18 @@ Add the following to your project's Gemfile:
 
 ```ruby
 group :development, :test do
-  gem 'jazz_hands', github: 'jkrmr/jazz_hands', branch: 'byebug_and_updated_pry'
+  gem 'jazz_hands', github: 'jkrmr/jazz_hands'
 end
 ```
 
-That's it. Run `rails console` as usual.
+or, if you're not using bundler,
+
+```sh
+$ gem install specific_install
+$ gem specific_install jkrmr/jazz_hands
+```
+
+That's it. Run `rails console` or `pry` as usual.
 
 [Hirb][hirb] isn't enabled by default. To use, run `Hirb.enable` in the console.
 
