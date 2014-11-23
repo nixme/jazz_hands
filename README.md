@@ -20,7 +20,7 @@ hard-working hands!
 * [**Pry Stack Explorer**][pry-stack_explorer] to navigate the call stack and
   frames.
 * [**Coolline**][coolline] and [**Coderay**][coderay] for syntax highlighting as
-  you type. _Optional. MRI 1.9.3/2.0.0 only_
+  you type. _Optional. MRI 2.0.0+ only_
 
 
 ## Dependencies
@@ -107,6 +107,6 @@ file an [issue][issues]. [Project changelog][changelog].
 [coolline]:           https://github.com/Mon-Ouie/coolline
 [coderay]:            https://github.com/rubychan/coderay
 [rb-readline]:        https://github.com/luislavena/rb-readline
-[pullrequests]:       https://github.com/nixme/jazz_hands/pulls
-[issues]:             https://github.com/nixme/jazz_hands/issues
-[changelog]:          https://github.com/nixme/jazz_hands/blob/master/CHANGELOG.md
+[pullrequests]:       https://github.com/jkrmr/jazz_hands/pulls
+[issues]:             https://github.com/jkrmr/jazz_hands/issues
+[changelog]:          https://github.com/jkrmr/jazz_hands/blob/master/CHANGELOG.md
