@@ -16,7 +16,6 @@ hard-working hands!
 * [**Pry Git**][pry-git] to teach the console about git. Diffs, blames, and
   commits on methods and classes, not just files.
 * [**Pry Remote**][pry-remote] to connect remotely to a Pry console.
-* [**Pry Debugger**][pry-debugger] to turn the console into a simple debugger.
 * [**Pry Stack Explorer**][pry-stack_explorer] to navigate the call stack and
   frames.
 * [**Coolline**][coolline] and [**Coderay**][coderay] for syntax highlighting as
@@ -25,6 +24,7 @@ hard-working hands!
 
 ## Usage
 
+### Rails Projects
 Ruby 1.9.2+, Rails 3 or 4 only. Add to your project Gemfile:
 
 ```ruby
@@ -34,6 +34,29 @@ end
 ```
 
 That's it. Run `rails console` as usual.
+
+### Non-Rails Projects
+With bundler, add to your Gemfile:
+```ruby
+gem 'jazz_hands'
+```
+
+Then require the gem
+```ruby
+require 'jazz_hands' #(or use Bundler.require)
+```
+
+In code:
+```ruby
+foo_method(1,2)
+binding.pry
+bar_method(3,4)
+```
+
+Or a console, with `bundle console` and the following hack:
+```ruby
+echo "Pry.start || exit rescue LoadError" > ~/.irbrc
+```
 
 [Hirb][hirb] isn't enabled by default. To use, run `Hirb.enable` in the console.
 
@@ -89,7 +112,6 @@ file an [issue][issues]. [Project changelog][changelog].
 [pry-rails]:          https://github.com/rweng/pry-rails
 [pry-doc]:            https://github.com/pry/pry-doc
 [pry-git]:            https://github.com/pry/pry-git
-[pry-debugger]:       https://github.com/nixme/pry-debugger
 [pry-remote]:         https://github.com/Mon-Ouie/pry-remote
 [pry-stack_explorer]: https://github.com/pry/pry-stack_explorer
 [coolline]:           https://github.com/Mon-Ouie/coolline
