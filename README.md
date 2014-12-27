@@ -45,8 +45,7 @@ X) will work but is not recommended.
 
 ## Options
 
-Change the following options by creating an initializer in your Rails project
-Example `config/initializers/jazz_hands.rb`:
+Set options by editing `~/.pryrc`:
 
 ```ruby
 if defined?(JazzHands)
