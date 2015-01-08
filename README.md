@@ -1,6 +1,9 @@
 Jazz Hands
 ==========
 
+[![Dependency Status](https://gemnasium.com/jkrmr/jazz_hands.svg)](https://gemnasium.com/jkrmr/jazz_hands)
+
+
 Spending hours in the rails console? Spruce it up and show off those
 hard-working hands!
 
