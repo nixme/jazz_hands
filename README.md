@@ -3,6 +3,8 @@ Jazz Hands
 
 [![Dependency Status](https://gemnasium.com/jkrmr/jazz_hands.svg)](https://gemnasium.com/jkrmr/jazz_hands)
 
+**NB: This fork is deprecated. For an up-to-date solution, see [Jazz Fingers](https://github.com/plribeiro3000/jazz_fingers).**
+
 
 Spending hours in the rails console? Spruce it up and show off those
 hard-working hands!
