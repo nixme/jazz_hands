@@ -16,24 +16,36 @@ hard-working hands!
 * [**Pry Git**][pry-git] to teach the console about git. Diffs, blames, and
   commits on methods and classes, not just files.
 * [**Pry Remote**][pry-remote] to connect remotely to a Pry console.
-* [**Pry Debugger**][pry-debugger] to turn the console into a simple debugger.
+* [**Pry Byebug**][pry-byebug] to turn the console into a simple debugger.
 * [**Pry Stack Explorer**][pry-stack_explorer] to navigate the call stack and
   frames.
 * [**Coolline**][coolline] and [**Coderay**][coderay] for syntax highlighting as
-  you type. _Optional. MRI 1.9.3/2.0.0 only_
+  you type. _Optional. MRI 2.0.0+ only_
+
+
+## Dependencies
+
+Ruby 2.0.0+, Rails 3 or 4. 
 
 
 ## Usage
 
-Ruby 1.9.2+, Rails 3 or 4 only. Add to your project Gemfile:
+Add the following to your project's Gemfile:
 
 ```ruby
 group :development, :test do
-  gem 'jazz_hands'
+  gem 'jazz_hands', github: 'jkrmr/jazz_hands'
 end
 ```
 
-That's it. Run `rails console` as usual.
+or, if you're not using bundler,
+
+```sh
+$ gem install specific_install
+$ gem specific_install jkrmr/jazz_hands
+```
+
+That's it. Run `rails console` or `pry` as usual.
 
 [Hirb][hirb] isn't enabled by default. To use, run `Hirb.enable` in the console.
 
@@ -74,7 +86,7 @@ mixed encodings.
 Syntax highlighting as you type via [Coolline][coolline] and [Coderay][coderay]
 is disabled by default due to slightly buggy behavior. To enable, add
 `JazzHands.enable_syntax_highlighting_as_you_type!` to the initializer. Only
-works with MRI 1.9.3 or 2.0.0.
+works with MRI 2.0.0.
 
 
 ## Contributing
@@ -89,12 +101,12 @@ file an [issue][issues]. [Project changelog][changelog].
 [pry-rails]:          https://github.com/rweng/pry-rails
 [pry-doc]:            https://github.com/pry/pry-doc
 [pry-git]:            https://github.com/pry/pry-git
-[pry-debugger]:       https://github.com/nixme/pry-debugger
+[pry-byebug]:         https://github.com/deivid-rodriguez/pry-byebug
 [pry-remote]:         https://github.com/Mon-Ouie/pry-remote
 [pry-stack_explorer]: https://github.com/pry/pry-stack_explorer
 [coolline]:           https://github.com/Mon-Ouie/coolline
 [coderay]:            https://github.com/rubychan/coderay
 [rb-readline]:        https://github.com/luislavena/rb-readline
-[pullrequests]:       https://github.com/nixme/jazz_hands/pulls
-[issues]:             https://github.com/nixme/jazz_hands/issues
-[changelog]:          https://github.com/nixme/jazz_hands/blob/master/CHANGELOG.md
+[pullrequests]:       https://github.com/jkrmr/jazz_hands/pulls
+[issues]:             https://github.com/jkrmr/jazz_hands/issues
+[changelog]:          https://github.com/jkrmr/jazz_hands/blob/master/CHANGELOG.md
