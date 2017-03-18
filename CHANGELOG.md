@@ -1,7 +1,13 @@
+## 1.0.0 (2014-11-23)
+* Loosen overly pessimistic dependencies (e.g., `~> 0.10` instead of `~> 0.10.1`)
+* Tighten open-ended dependencies (e.g. `~> 0.1` instead of `>= 0.1.7`)
+* Upgrade [pry][pry] to the latest 0.10.1
+* Replace [pry-debugger][pry-debugger] dependency with [pry-byebug][pry-byebug] to allow gem to work with Ruby 2.0+. Backwards-incompatible.
+
 ## 0.5.2 (2013-10-24)
 
 * Upgrade [pry-rails][pry-rails] to the latest 0.3.2,
-  [awesome_print][awesome_print] to 1.2 and loosen it's dependency, and removed
+  [awesome_print][awesome_print] to 1.2 and loosen its dependency, and removed
   [coderay][coderay] as an explicit dependency since [pry][pry] already includes
   it.
 
@@ -121,3 +127,4 @@
 [pry-stack_explorer]: https://github.com/pry/pry-stack_explorer
 [pry-debugger]:       https://github.com/nixme/pry-debugger
 [pry-rails]:          https://github.com/rweng/pry-rails
+[pry-byebug]:         https://github.com/deivid-rodriguez/pry-byebug

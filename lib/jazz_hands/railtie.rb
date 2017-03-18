@@ -6,7 +6,7 @@ require 'pry-remote'
 require 'pry-stack_explorer'
 require 'awesome_print'
 require 'jazz_hands/hirb_ext'
-require 'pry-debugger'
+require 'pry-byebug'
 
 
 module JazzHands
@@ -18,10 +18,10 @@ module JazzHands
 
         # Use awesome_print for output, but keep pry's pager. If Hirb is
         # enabled, try printing with it first.
-        Pry.config.print = ->(output, value) do
+        Pry.config.print = ->(output, value, _pry_) do
           return if JazzHands._hirb_output && Hirb::View.view_or_page_output(value)
           pretty = value.ai(indent: 2)
-          Pry::Helpers::BaseHelpers.stagger_output("=> #{pretty}", output)
+          _pry_.pager.page("=> #{pretty}")
         end
 
         # Friendlier prompt - line number, app name, nesting levels look like
