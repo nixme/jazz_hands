@@ -1,3 +1,13 @@
+## 1.0.0 (2017-12-11)
+
+* Removed [pry-stack_explorer][pry-stack_explorer]
+* Removed [pry-git][pry-git]
+* Removed [pry-debugger][pry-debugger]
+* Added [pry-byebug][pry-byebug]
+* Upgraded all dependencies
+* Fixed the custom Pry.config.print proc
+* Improved the Pry prompt
+
 ## 0.5.2 (2013-10-24)
 
 * Upgrade [pry-rails][pry-rails] to the latest 0.3.2,
@@ -121,3 +131,4 @@
 [pry-stack_explorer]: https://github.com/pry/pry-stack_explorer
 [pry-debugger]:       https://github.com/nixme/pry-debugger
 [pry-rails]:          https://github.com/rweng/pry-rails
+[pry-byebug]:         https://github.com/deivid-rodriguez/pry-byebug
