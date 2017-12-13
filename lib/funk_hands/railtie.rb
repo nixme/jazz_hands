@@ -1,7 +1,7 @@
 require 'pry'
 require 'pry-rails'
 require 'pry-doc'
-require 'pry-remote'
+require 'pry-remote-reloaded'
 require 'awesome_print'
 require 'funk_hands/hirb_ext'
 require 'pry-byebug'

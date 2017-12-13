@@ -1,3 +1,8 @@
+## 1.1.0 (2017-12-13)
+
+* Removed [pry-remote][pry-remote]
+* Added [pry-remote-reloaded][pry-remote-reloaded]
+
 ## 1.0.0 (2017-12-11)
 
 * Removed [pry-stack_explorer][pry-stack_explorer]
@@ -118,17 +123,17 @@
   [pry-git][pry-git]. Bit of glue to replace IRB with pry in Rails console,
   pretty colors.
 
-
-[pry]:                http://pry.github.com
-[awesome_print]:      https://github.com/michaeldv/awesome_print
-[pry-doc]:            https://github.com/pry/pry-doc
-[pry-git]:            https://github.com/pry/pry-git
-[pry-nav]:            https://github.com/nixme/pry-nav
-[pry-remote]:         https://github.com/Mon-Ouie/pry-remote
-[coolline]:           https://github.com/Mon-Ouie/coolline
-[coderay]:            https://github.com/rubychan/coderay
-[hirb]:               https://github.com/cldwalker/hirb
-[pry-stack_explorer]: https://github.com/pry/pry-stack_explorer
-[pry-debugger]:       https://github.com/nixme/pry-debugger
-[pry-rails]:          https://github.com/rweng/pry-rails
-[pry-byebug]:         https://github.com/deivid-rodriguez/pry-byebug
+[pry]:                    http://pry.github.com
+[awesome_print]:          https://github.com/michaeldv/awesome_print
+[pry-doc]:                https://github.com/pry/pry-doc
+[pry-git]:                https://github.com/pry/pry-git
+[pry-nav]:                https://github.com/nixme/pry-nav
+[pry-remote]:             https://github.com/Mon-Ouie/pry-remote
+[coolline]:               https://github.com/Mon-Ouie/coolline
+[coderay]:                https://github.com/rubychan/coderay
+[hirb]:                   https://github.com/cldwalker/hirb
+[pry-stack_explorer]:     https://github.com/pry/pry-stack_explorer
+[pry-debugger]:           https://github.com/nixme/pry-debugger
+[pry-rails]:              https://github.com/rweng/pry-rails
+[pry-byebug]:             https://github.com/deivid-rodriguez/pry-byebug
+[pry-remote-reloaded]:    https://github.com/Jack12816/pry-remote-reloaded

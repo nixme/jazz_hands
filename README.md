@@ -78,16 +78,17 @@ works with MRI 1.9.3 or 2.0.0.
 Patches and bug reports are welcome. Just send a [pull request][pullrequests] or
 file an [issue][issues]. [Project changelog][changelog].
 
-[pry]:           http://pry.github.com
-[awesome_print]: https://github.com/michaeldv/awesome_print
-[hirb]:          https://github.com/cldwalker/hirb
-[pry-rails]:     https://github.com/rweng/pry-rails
-[pry-doc]:       https://github.com/pry/pry-doc
-[pry-byebug]:    https://github.com/deivid-rodriguez/pry-byebug
-[pry-remote]:    https://github.com/Mon-Ouie/pry-remote
-[coolline]:      https://github.com/Mon-Ouie/coolline
-[coderay]:       https://github.com/rubychan/coderay
-[rb-readline]:   https://github.com/luislavena/rb-readline
-[pullrequests]:  https://github.com/Jack12816/jazz_hands/pulls
-[issues]:        https://github.com/Jack12816/jazz_hands/issues
-[changelog]:     https://github.com/Jack12816/jazz_hands/blob/master/CHANGELOG.md
+[pry]:                    http://pry.github.com
+[awesome_print]:          https://github.com/michaeldv/awesome_print
+[hirb]:                   https://github.com/cldwalker/hirb
+[pry-rails]:              https://github.com/rweng/pry-rails
+[pry-doc]:                https://github.com/pry/pry-doc
+[pry-byebug]:             https://github.com/deivid-rodriguez/pry-byebug
+[pry-remote]:             https://github.com/Mon-Ouie/pry-remote
+[pry-remote-reloaded]:    https://github.com/Jack12816/pry-remote-reloaded
+[coolline]:               https://github.com/Mon-Ouie/coolline
+[coderay]:                https://github.com/rubychan/coderay
+[rb-readline]:            https://github.com/luislavena/rb-readline
+[pullrequests]:           https://github.com/Jack12816/jazz_hands/pulls
+[issues]:                 https://github.com/Jack12816/jazz_hands/issues
+[changelog]:              https://github.com/Jack12816/jazz_hands/blob/master/CHANGELOG.md
