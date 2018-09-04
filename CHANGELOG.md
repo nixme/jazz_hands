@@ -1,3 +1,7 @@
+## 1.2.0 (2018-09-04)
+
+* Opened the dependency version requirements
+
 ## 1.1.0 (2017-12-13)
 
 * Removed [pry-remote][pry-remote]
