@@ -39,7 +39,7 @@ That's it. Run `rails console` as usual.
 
 Ruby compiled against a proper readline library, ideally GNU readline, is
 recommended. Alternatively, [`gem install rb-readline`][rb-readline] for an
-acceptible backup. Using ruby compiled against a `libedit` wrapper (primarily OS
+acceptable backup. Using ruby compiled against a `libedit` wrapper (primarily OS
 X) will work but is not recommended.
 
 
