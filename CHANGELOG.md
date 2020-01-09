@@ -1,3 +1,7 @@
+## 1.3.0 (2020-01-09)
+
+* Opened the dependency version requirements further
+
 ## 1.2.0 (2018-09-04)
 
 * Opened the dependency version requirements
