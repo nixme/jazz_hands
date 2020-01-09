@@ -23,9 +23,9 @@ Gem::Specification.new do |gem|
   gem.add_runtime_dependency 'pry-rails', '>= 0.3.6'
   gem.add_runtime_dependency 'pry-doc', '>= 0.11.1'
   gem.add_runtime_dependency 'pry-remote-reloaded', '~> 1.0'
-  gem.add_runtime_dependency 'pry-byebug', '~> 1.3'
+  gem.add_runtime_dependency 'pry-byebug', '>= 1.0'
   gem.add_runtime_dependency 'hirb', '>= 0.7.3'
   gem.add_runtime_dependency 'coolline', '>= 0.4.2'
   gem.add_runtime_dependency 'awesome_print', '~> 1.8'
-  gem.add_runtime_dependency 'railties', '>= 3.0', '< 6.0'
+  gem.add_runtime_dependency 'railties', '>= 3.0', '< 7.0'
 end
