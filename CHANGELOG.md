@@ -1,3 +1,7 @@
+## 1.4.0 (2020-04-27)
+
+* Requires a more recent Pry version (at least 0.12.0) to work
+
 ## 1.3.0 (2020-01-09)
 
 * Opened the dependency version requirements further
