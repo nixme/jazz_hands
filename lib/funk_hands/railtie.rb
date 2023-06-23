@@ -41,8 +41,12 @@ module FunkHands
         blue = ->(text) { color[] ? "\001\e[0;34m\002#{text}\001\e[0m\002" : text.to_s }
         bold = ->(text) { color[] ? "\001\e[1m\002#{text}\001\e[0m\002"    : text.to_s }
 
+        name = app.class.module_parent_name \
+          if app.class.respond_to?(:module_parent_name)
+        name ||= app.class.parent_name
+        name = name.underscore
+
         separator = -> { red.(FunkHands.prompt_separator) }
-        name = app.class.parent_name.underscore
         colored_name = -> { blue.(name) }
 
         line = ->(pry) { "[#{bold.(pry.input_ring.size)}] " }

@@ -1,3 +1,8 @@
+## next (2023-06-23)
+
+* Added support for the new module_parent_name method, required by
+  newer Rails versions (>= 6.1)
+
 ## 1.4.0 (2020-04-27)
 
 * Requires a more recent Pry version (at least 0.12.0) to work
